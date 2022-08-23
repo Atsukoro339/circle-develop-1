@@ -1,33 +1,68 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <div class="v228_6"></div>
+    <!--AND回路の画像-->
+    <div class="v226_5"></div>
+    <!--OR回路の画像-->
+    <div class="v225_4"></div>
+    <!--NOT回路の画像-->
+
+    <div class="v242_24">
+        <!--写真部分-->
+        <div class="v242_28">
+            <button class="v242_28 v242_29" type="button" onclick="alert('or');">実行</button>
+        </div>
+    </div>
+
+    <div class="v242_27">
+        <!--写真部分-->
+        <div class="v242_28">
+            <button class="v242_28 v242_29" type="button" onclick="alert('not');">実行</button>
+        </div>
+    </div>
+
+    <div class="v242_21">
+        <!--写真部分-->
+        <button class="v242_19 v242_20" type="button" onclick="alert('and');">実行</button>
+    </div>
+
+    <div class="v239_14">
+        <!--AND出力の位置-->
+        <span class="v17_30">
+            <!--AND出力の文字のフォント-->0
+        </span>
+    </div>
+    <div class="v239_15">
+        <!--NOT出力の位置-->
+        <span class="v17_28">
+            <!--NOT出力の文字のフォント-->0
+        </span>
+    </div>
+    <div class="v239_13">
+        <!--OR出力の位置-->
+        <span class="v53_3">
+            <!--OR出力の文字のフォント-->0
+        </span>
+    </div>
+    <div class="v264_24">
+        <!--AND入力の上から2番目の位置-->
+        <input class="v264_25" type="number" id="in2_and" placeholder="0" min="0" max="1" step="1">
+    </div>
+    <div class="v264_22">
+        <!--AND入力の上から1番目の位置-->
+        <input class="v264_23" type="number" id="in1_and" placeholder="0" min="0" max="1" step="1">
+    </div>
+    <div class="v264_6">
+        <!--OR入力の上から2番目の位置-->
+        <input class="v264_7" type="number" id="in2_or" placeholder="1" min="0" max="1" step="1">
+    </div>
+    <div class="v264_10">
+        <!--OR入力の上から1番目の位置-->
+        <input class="v264_11" type="number" id="in1_or" placeholder="1" min="0" max="1" step="1">
+    </div>
+    <div class="v264_28">
+        <!--NOT入力の位置-->
+        <input class="v264_29" type="number" id="in_not" placeholder="0" min="0" max="1" step="1">
+    </div>
 </template>
 
 <script>
@@ -41,18 +76,426 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+* {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .v17_16 {
+        width: 100%;
+        height: 1905px;
+        background: rgba(255, 255, 255, 1);
+        margin: 106px;
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v228_6 {
+        width: 700px;
+        height: 300px;
+        background: url("../assets/photo/回路OR\ .jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 1081px;
+        left: 596px;
+        overflow: hidden;
+    }
+
+    .v226_5 {
+        width: 700px;
+        height: 300px;
+        background: url("../assets/photo/回路NOT\ .jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 636px;
+        left: 596px;
+        overflow: hidden;
+    }
+
+    .v225_4 {
+        width: 700px;
+        height: 300px;
+        background: url("../assets/photo/回路AND\ .jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 134px;
+        left: 603px;
+        overflow: hidden;
+    }
+
+    .v242_24 {
+        width: 373px;
+        height: 100px;
+        /*background: url("./images/v242_24.png");*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 1481px;
+        left: 759px;
+        overflow: hidden;
+    }
+
+    .v242_25 {
+        width: 373px;
+        height: 100px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v242_26 {
+        width: 188px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 26px;
+        left: 93px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v242_27 {
+        width: 373px;
+        height: 100px;
+        /*background: url("./images/v242_27.png");*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 964px;
+        left: 759px;
+        overflow: hidden;
+    }
+
+    .v242_28 {
+        width: 373px;
+        height: 100px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v242_29 {
+        width: 188px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 26px;
+        left: 93px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v242_21 {
+        width: 373px;
+        height: 100px;
+        /*background: url("./images/v242_21.png");*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 508px;
+        left: 759px;
+        overflow: hidden;
+    }
+
+    .v242_19 {
+        width: 373px;
+        height: 100px;
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v242_20 {
+        width: 188px;
+        color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 26px;
+        left: 93px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v239_14 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 222px;
+        left: 1266px;
+        overflow: hidden;
+    }
+
+    .v17_30 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+        border: 4px;
+    }
+
+    .v239_15 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 741px;
+        left: 1266px;
+        overflow: hidden;
+    }
+
+    .v17_28 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v239_13 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 1186px;
+        left: 1253px;
+        overflow: hidden;
+    }
+
+    .v53_3 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v264_24 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 295px;
+        left: 551px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .v264_25 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 5px;
+        left: 24px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v264_22 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 177px;
+        left: 551px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .v264_23 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 4px;
+        left: 24px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v264_6 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 1246px;
+        left: 551px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .v264_7 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 5px;
+        left: 23px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v264_10 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 1141px;
+        left: 551px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .v264_11 {
+        width: 44px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 5px;
+        left: 23px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .v264_28 {
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        margin: 10px;
+        opacity: 1;
+        position: absolute;
+        top: 741px;
+        left: 551px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+    }
+
+    .v264_29 {
+        width: 43px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 5px;
+        left: 23px;
+        font-family: Inter;
+        font-weight: Regular;
+        font-size: 64px;
+        opacity: 1;
+        text-align: center;
+    }
 </style>
